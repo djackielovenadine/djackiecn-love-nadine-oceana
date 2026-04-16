@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for nadine oceana ❤️</title>
+<style>
+body { text-align:center; font-family:Arial; margin-top:100px; }
+button { padding:10px 20px; margin:10px; }
+#no { position:absolute; }
+</style>
+</head>
+
+<body>
+
+<h2>
+halo sayangku, cintaku, cantikku, duniaku, semestaku.. <br>
+makasih ya udah selalu ada sama aku:> <br>
+aku sayang banget sama kamu, aku gatau harus bilang gimana lagi, but please.. jangan tinggalin aku ya?
+</h2>
+
+<button id="yes">yes</button>
+<button id="no">no</button>
+
+<script>
+let yes = document.getElementById("yes");
+let no = document.getElementById("no");
+
+let size = 16;
+
+no.onclick = function(){
+    size += 10;
+    yes.style.fontSize = size + "px";
+    yes.style.padding = size + "px";
+
+    no.style.top = Math.random()*300 + "px";
+    no.style.left = Math.random()*300 + "px";
+};
+
+yes.onclick = function(){
+    window.location.href = "page3.html";
+};
+</script>
+
+</body>
+</html>
