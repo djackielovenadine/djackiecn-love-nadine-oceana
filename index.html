@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for my beauty girl, nadine oceana 🫰🏻 </title>
+<style>
+body { text-align:center; font-family:Arial; margin-top:80px; }
+input, button { padding:10px; margin:5px; }
+#next { display:none; }
+</style>
+</head>
+
+<body>
+
+<h2>for my beauty girl, nadine oceana 🫰🏻</h2>
+
+<h3>masuk dulu ya 😏</h3>
+
+<input id="nama" placeholder="NAMA"><br>
+<input id="pass" type="password" placeholder="PASSWORD"><br>
+
+<button onclick="login()">masuk</button>
+
+<div id="next">
+    <h3>lagu favorit kamu apa?</h3>
+    <input id="lagu"><br>
+
+    <p>lanjut ke halaman berikutnya?</p>
+    <button id="yes">yes</button>
+    <button id="no">no</button>
+</div>
+
+<script>
+function login(){
+    let pass = document.getElementById("pass").value;
+
+    if(pass === "03042026"){
+        document.getElementById("next").style.display = "block";
+    } else {
+        alert("salah ‼️");
+    }
+}
+
+let yes = document.getElementById("yes");
+let no = document.getElementById("no");
+
+no.onclick = function(){
+    no.style.display = "none";
+    yes.style.fontSize = "30px";
+    yes.style.position = "absolute";
+    yes.style.left = "50%";
+    yes.style.transform = "translateX(-50%)";
+};
+
+yes.onclick = function(){
+    window.location.href = "page2.html";
+};
+</script>
+
+</body>
+</html>
